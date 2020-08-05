@@ -57,18 +57,6 @@ const questions = () => {
                 }
             }
         },
-    
-        {   type: 'confirm',
-            name: 'confirmCredits',
-            message: 'Did any one contribute?',
-                default: true
-        },
-        {
-            type: 'input',
-            name: 'credits',
-            message: 'List third-party assets and other contributors:',
-            when: ({ confirmCredits}) => confirmCredits
-        },
         {
             type: 'input',
             name: 'contribute',
@@ -97,42 +85,37 @@ const questions = () => {
         },
         {
             type: 'input',
-            name: 'questions',
-            message: 'Where can people reach you with additional questions? (Required)',
-            validate: questionsInput => {
-                if (questionsInput) {
+            name: 'questionsGitHub',
+            message: 'Please enter your GitHub Username (Required)',
+            validate: questionsGitHubInput => {
+                if (questionsGitHubInput) {
                     return true;
                 } else {
-                    console.log('You must provide contact');
+                    console.log('You must provide a username.');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'questionsEmail',
+            message: 'Please enter your e-mail address. (Required)',
+            validate: questionsEmailInput => {
+                if (questionsEmailInput) {
+                    return true;
+                } else {
+                    console.log('You must provide an e-mail address.');
                     return false;
                 }
             }
         },
         {   
-            type: 'input',
+            type: 'checkbox',
             name: 'license',
-            message: 'Please choose a license. (Required)',
-            validate: licenseInput => {
-                if (licenseInput){
-                    return true;
-                } else {
-                    console.log('You need to choose a license!');
-                    return false;
-                }
-            }
+            message: 'Please choose a license. (Check all that apply)',
+            choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense']
         },
     ])};
-
-// TO-DO: function to write README file
-
-
-// function to initialize program
-function init() {
-
-}
-
-// function call to initialize program
-init();
 
 questions()
     .then(portfolioData => {
