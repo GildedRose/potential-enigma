@@ -1,8 +1,8 @@
 
-# Chris 
+# README Generator 
 
-  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-  Anne
+  [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+  This project displays a series of questions to create a well planned readme file.
   
 ## Table of Contents
   * [Installation](#installation)
@@ -13,23 +13,22 @@
   * [Questions](#questions)
 
 ## Installation 
-  Joe
+  Pull from GitHub.
 
 ## Usage
-  Josie
+  Go into the Develop folder in terminal and run node index
 
 ## License
-  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) 
+  [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/) 
   Click badge for license information.
 
 ## Contribute
-  Nibbles
+  I would not like others to contribute.
 
 ## Tests
-  Spicy
+  This is a test.
 
 ## Questions
-  [Eloise](http://github.com/undefined)
+  [GildedRose](http://github.com/GildedRose)
   [anne.k.plummer@gmail.com](mailto:anne.k.plummer@gmail.com)
-
 
