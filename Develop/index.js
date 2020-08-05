@@ -57,6 +57,12 @@ const questions = () => {
                 }
             }
         },
+        {   
+            type: 'checkbox',
+            name: 'license',
+            message: 'Please choose a license. (Check all that apply)',
+            choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense']
+        },
         {
             type: 'input',
             name: 'contribute',
@@ -108,12 +114,6 @@ const questions = () => {
                     return false;
                 }
             }
-        },
-        {   
-            type: 'checkbox',
-            name: 'license',
-            message: 'Please choose a license. (Check all that apply)',
-            choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense']
         },
     ])};
 
