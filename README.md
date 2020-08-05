@@ -16,7 +16,8 @@
   Pull from GitHub.
 
 ## Usage
-  Go into the Develop folder in terminal and run node index
+  View video for how to use.
+  https://drive.google.com/file/d/15V0EJg5fCGzXt2bLULDjWg6FMd6KtvSo/view
 
 ## License
   [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/) 
